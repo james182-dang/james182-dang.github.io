@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #D79922;
-    --secondary-color: #EFE2BA;
-    --tertiary-color: #F13C20;
-    --quaternary-color: #4056A1;
-    --quinternary-color: #C5CBE3;
+    --primary-color: #E7717D;
+    --secondary-color: #C2CAD0;
+    --tertiary-color: #C2B9B0;
+    --quaternary-color: #7E685A;
+    --quinternary-color: #AFD275;
 }
 
 * {
@@ -73,7 +73,7 @@ header nav ul li a:hover {
 /* Hero Begin */
 
 .hero {
-    background-image: url("./images/IMG_0092.jpeg");
+    background-color: var(--quaternary-color);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -87,16 +87,17 @@ header nav ul li a:hover {
     height: 10%;
     margin: 30px 15px;
     font-size: 18px;
-    background-color: rgba(194, 185, 176, 0.8);
-    border: 2px solid rgb(126, 104, 90);
     border-radius: 10px;
     font-family: 'Libre Franklin', sans-serif;
     max-height: 50%;
+    background-color: var(--quinternary-color);
+    color: white;
 }
 
 .hero-cta h2 {
     width: 100%;
     margin: 1.5%;
+    text-shadow: 0, 0, 10px, rgba(0, 0, 0, 0.5);
 }
 
 
@@ -105,11 +106,12 @@ header nav ul li a:hover {
     margin: 1.5%;
     border: 1px solid #000;
     border-radius: 10px;
+    float: left;
 }
 
 .hero-text {
-    width: 30%;
     margin: 1.5%;
+    line-height: 2.3;
 }
 
 
@@ -118,10 +120,11 @@ header nav ul li a:hover {
 /* About section begin */
 
 .about-me {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     line-height: 1.5;
     text-align: left;
     padding-left: 15px;
+    background-color: var(--tertiary-color);
 }
 
 .about-text {
@@ -143,20 +146,30 @@ header nav ul li a:hover {
 
 /* About section end */
 
+/* Portfolio section begin */
+
 .portfolio {
     padding-left: 15px;
-    width: 50%;
-    background-color: var(--quinternary-color);
+
 }
 
 .portfolio-box {
-    display: flex;
-    flex-wrap: wrap;
     border: 1px solid black;
 }
 
 .portfolio-content {
+    border: 3px solid black;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
+    justify-content: flex-end;
+}
+
+.visual-art {
+    margin: 1.5%;
+    border: 1px solid black;
+}
+
+
+#tyson {
+    width: 15.5vw;
 }
