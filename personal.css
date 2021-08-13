@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 body {
@@ -148,28 +149,44 @@ header nav ul li a:hover {
 
 /* Portfolio section begin */
 
-.portfolio {
-    padding-left: 15px;
-
-}
-
 .portfolio-box {
+    margin: 10px 20px;
     border: 1px solid black;
 }
 
 .portfolio-content {
-    border: 3px solid black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
-.visual-art {
-    margin: 1.5%;
+#run-buddy {
+    margin: 20px;
+    width: 30%;
     border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    float: left;
 }
 
+#horiseon {
+    margin: 20px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    float: right;
+}
 
-#tyson {
-    width: 15.5vw;
+/* Grow class functionality */
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
 }
