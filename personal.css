@@ -29,6 +29,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--primary-color);
+    border-bottom: 1px solid black;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -130,7 +131,7 @@ header nav ul li a:hover {
     line-height: 1.5;
     text-align: center;
     padding-left: 15px;
-    background-color: var(--tertiary-color);
+    background-color: rgba(194, 185, 176, 0.7);
     display: block;
 }
 
@@ -165,16 +166,18 @@ header nav ul li a:hover {
 }
 
 .portfolio-box {
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     font-size: 36px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    border-width: 80%;
 }
 
 .portfolio-content {
-    border: 1px solid black;
     display: flex;
-
+    flex-wrap: wrap;
+    padding: 30px;
 }
 
 
@@ -204,20 +207,97 @@ header nav ul li a:hover {
 
 /* Portfolio section end */
 
+/* Contact section begin */
+
+#contact {
+    padding-top: 20px;
+    background-color: var(--quaternary-color);
+    padding-bottom: 20px;
+}
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 36px;
+    background-color: var(--quaternary-color);
+}
+
+.contact-overhead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--quaternary-color);
+}
+
+.contact-arch {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20%;
+    line-height: 1.5;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(231, 113, 125, 0.6);
+}
+
+.contact-profiles {
+    line-height: 3.0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(175, 210, 117, 0.6);
+}
+
+.contact-form h3 {
+    padding: 20px;
+}
+
+.contact-form {
+    margin: 20px;
+}
+/* Contact section end */
+
 /* Footer styling begin */
 
 footer {
-    font-family: 'Libre Franklin', sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--primary-color);
     color: #fff;
+    align-items: center;
+    height: 50px;
 }
 
-footer a {
+footer h3 {
+    margin: 0 40px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
     text-decoration: none;
 }
+
+footer ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 40px;
+    padding: 0 40px;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+footer ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 /* Footer styling end */
 
@@ -233,3 +313,16 @@ footer a {
 }
 
 
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 575px) {
+
+}
